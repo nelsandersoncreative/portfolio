@@ -722,10 +722,12 @@ footer {
 
     .project-title-hide, .project-title-hide-2, .project-title-hide-3, .project-title-show, .project-title-show-2, .project-title-show-3 {
         font-size: 15px;
+        width: 100%;
     }
 
     .project-title-show:hover, .project-title-show-2:hover, .project-title-show-3:hover, .project-title-hide:hover, .project-title-hide-2:hover, .project-title-hide-3:hover {
         font-size: 14px;
+        width: 100%;
     }
 
     .project-details {
