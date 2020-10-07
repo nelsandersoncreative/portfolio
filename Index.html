@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nels Anderson</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main role="main" class="wrapper" id="home">
+        <span class="anchor" id="section0"></span>
+        <Header class="banner" id="bannerHeader">
+            <h1><a href="#section0" class="nav-link nav-link-open">Nels Anderson</a></h1>
+            <ul class="bannerNav" id="bannerNavLinks">
+                <li class="navBar"><a href="#section2" class="nav-link nav-bar-projects" id="projectsNav">Projects</a></li>
+                <li class="navBar"><a href="#section1" class="nav-link navBarAbout" id="aboutNav">About</a></li>
+                <li class="navBar"><a href="#section3" class="nav-link navBarContact" id="contactNav">Contact</a></li>
+            </ul>
+        </Header>
+    <section class="content">
+        <Section class="portraitPic">
+            <a href="index.html">
+                <img class="portrait" src="assets/croppedPic.jpg" alt="Nels Anderson Portrait Pic"/>
+                </a>
+        </Section>
+        <span class="anchor" id="section1"></span>
+        <section class="contentText" id="aboutSection">
+            <h2>About</h2>
+            <p class="welcomeBioTextOne">Hi, I’m Nels.  
+                &nbsp;&nbsp; I’m a fullstack developer and tech enthusiast based in Southern California.</p>
+            <p class="welcomeBioTextTwo">I am a recent graduate of the Front End Web Development bootcamp at Thinkful; I also hold a B.A. 
+                from the University of Southern California.&nbsp; My passion for solving puzzles and conceptualizing ideas from inception to implementation led me to coding.  
+                &nbsp;The idea of creating a transformative user experience with lines of code excites me.  
+                &nbsp; I am passionate about the web, and love all the things that come along with programming: API's, functions, libraries and getting apps to do things gracefully and efficiently.
+                &nbsp; Staying productive whether that's on a team or working alone is one of my strong suits.
+                &nbsp; I always look forward to working with great team of programmers and building new relationships.
+                <br><br> When I’m not coding, I enjoy reading, hiking, playing music and cooking.&nbsp; (On that note, have you ever had a maple apple gallette?)  
+                &nbsp; My favorite subject is the next skillset I have to develop for a project.  
+                &nbsp;Outside of spending my time coding, I'm learning to play the fiddle and hoping to write string quartets.</p>
+        </section>
+        <span class="anchor" id="section2"></span>
+        <section class="projects" id="projectsSection">
+            <h2 class="projectsText">Projects</h2>
+            <div class="projectsWrapper">
+                <h3 class="project-title-hide" id="project-title-hide">CryptoTracker<span class="btn-show">(show more)</span></h3>
+                <h3 class="project-title-show" id="project-title-show">CryptoTracker<span class="btn-show">(show less)</span></h3>
+                <div class="projectOneWrapper" id="project-one-wrapper">
+                    <div class="projectOne" id="project-one">
+                        <h3 class="project-title" hidden>Cryptotracker</h3>
+                        <div class="project-body">
+                            <div class="screenshot-wrapper">
+                                <div class="featured-img-container" id="featured-img-container">
+                                    <!-- <span class="close-btn" id="close-btn">&times;</span> -->
+                                    <img class="featured-img featured" id="featured-img" src="./assets/app-screenshots/cryptotracker-screenshot-3.png">
+                                </div>
+                                <div class="screenshot-container">
+                                    <div class="screenshot-column"><img id="screenshotOne" class="project-screenshot" src="./assets/app-screenshots/cryptotracker-screenshot-1.png" alt="CryptoTracker Screenshot"></div>
+                                    <div class="screenshot-column"><img id="screenshotTwo" class="project-screenshot" src="./assets/app-screenshots/cryptotracker-screenshot-2.png" alt="CryptoTracker Screenshot"></div>
+                                    <div class="screenshot-column"><img id="screenshotThree" class="project-screenshot" src="./assets/app-screenshots/cryptotracker-screenshot-3.png" alt="CryptoTracker Screenshot"></div>
+                                    <div class="screenshot-column"><img id="screenshotFour" class="project-screenshot" src="./assets/app-screenshots/cryptotracker-screenshot-4.png" alt="CryptoTracker Screenshot"></div>
+                                </div>
+                            </div>
+                            <div class="project-details">
+                                <p class="project-blurb">This app was built to provide users with a resource to create a digital wallet to which they can add their favorite cryptocurrencies and follow chronological price data for their chosen coins.&nbsp; Cryptocurrency data is acquired via the CryptoCompare API and provides chronological price history back as far as 2010 all the way to the present. &nbsp; Price data is viewable in days, weeks and months and includes line chart visualizations with clickable data points for specific dates.</p>
+                                <div class="containerContainer">
+                                    <div class="projButtonContainer">
+                                        <a href="https://cryptotracker-omega.vercel.app/" target="_blank" class="projectButton">Live Demo</a>
+                                        <a href="https://github.com/nelsandersoncreative/cryptotracker-client" target="_blank" class="projectButton">Client GitHub Repo</a>
+                                        <a href="https://github.com/nelsandersoncreative/cryptotracker-server" target="_blank" class="projectButton">Server GitHub Repo</a>
+                                    </div>
+                                    <div class="technology-container-wrapper">
+                                        <h4 class="technologyTechHeading">TECHNOLOGY</h4>
+                                        <div class="technologyContainerTwo">
+                                            <button class="btn-reveal" id="btn-reveal">TECHNOLOGY <span class="btn-show">(show more)</span></button>
+                                            <button class="btn-hide" id="btn-hide">TECHNOLOGY <span class="btn-show">(show less)</span></button>
+                                            <div class="front-end-tech-mobile" id="front-end-tech-mobile">
+                                                <div class="technology-item-3">
+                                                    <div class="tech-text">PostgreSQL</div>
+                                                    <img class="postgresqlLogo-mobile tech-logos" src="./assets/technology-logos/postgresql.svg" alt="postgresql Logo">
+                                                </div>
+                                                <div class="technology-item-3">
+                                                    <div class="tech-text">Express</div>
+                                                    <img class="express-logo-mobile tech-logos" src="./assets/technology-logos/express.svg" alt="express Logo">
+                                                </div>
+                                                <div class="technology-item-3">
+                                                    <div class="tech-text">React</div>
+                                                    <img class="reactLogo-mobile tech-logos" src="./assets/technology-logos/react.svg" alt="react Logo">
+                                                </div>
+                                                <div class="technology-item-3">
+                                                    <div class="tech-text">Node.js</div>
+                                                    <img class="nodeLogo-mobile tech-logos" src="./assets/technology-logos/node-js.svg" alt="node Logo">
+                                                </div>
+                                            </div>
+                                            <div class="technology-grid" id="technology-grid">
+                                                <div class="left-list">
+                                                    <h5 className="first-h5">Front End</h5>
+                                                    <div class="front-end-tech-4">
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">React</div>
+                                                            <img class="reactLogo tech-logos" src="./assets/technology-logos/react.svg" alt="react Logo">
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">Javascript</div>
+                                                            <div><img class="javascriptLogo tech-logos" src="./assets/technology-logos/JavaScript.svg" alt="JavaScript Logo"></div>
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">HTML5</div>
+                                                            <div><img class="htmlLogo tech-logos" src="./assets/technology-logos/HTML5.svg" alt="HTML5 Logo"></div>
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">CSS</div>
+                                                            <img class="cssLogo tech-logos" src="./assets/technology-logos/CSS.svg" alt="CSS Logo">
+                                                        </div>
+                                                    </div>
+                                                    <h5>Testing</h5>
+                                                    <div class="front-end-tech-3">
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">Jest</div>
+                                                            <img class="jestLogo tech-logos" src="./assets/technology-logos/jest.svg" alt="jest Logo">
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">Supertest</div>
+                                                            <img class="supertestLogo tech-logos" src="./assets/technology-logos/supertest.svg" alt="supertest Logo">
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">Mocha</div>
+                                                            <img class="mochaLogo tech-logos-3" src="./assets/technology-logos/mocha.svg" alt="mocha Logo">
+                                                        </div>
+                                                    </div>
+                                                    <h5>Production</h5>
+                                                    <div class="front-end-tech-2">
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text" hidden>Vercel</div>
+                                                            <img class="vercelLogo tech-logos-3" src="./assets/technology-logos/vercel.svg" alt="vercel Logo">
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text" hidden>Heroku</div>
+                                                            <img class="herokuLogo tech-logos-3" src="./assets/technology-logos/heroku.svg" alt="heroku Logo">
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <h5>Back End</h5>
+                                                    <div class="front-end-tech-2">
+                                                        <div class="technology-item-3">
+                                                            <di class="tech-text" hidden>Node.js</di>
+                                                            <img class="nodeLogo tech-logos-3" src="./assets/technology-logos/node-js.svg" alt="node Logo">
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text" hidden>Express</div>
+                                                            <img class="expressLogo tech-logos-3" src="./assets/technology-logos/express.svg" alt="express Logo">
+                                                        </div>
+                                                    </div>
+                                                    <h5>Authentication</h5>
+                                                    <div class="front-end-tech">
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">JWT</div>
+                                                            <img class="jwtLogo tech-logos" src="./assets/technology-logos/JWT.svg" alt="JWT Logo">
+                                                        </div>
+                                                    </div>
+                                                    <h5>Database</h5>
+                                                    <div class="front-end-tech-2">
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text" hidden>PostgreSQL</div>
+                                                            <img class="postgresqlLogo tech-logos-2" src="./assets/technology-logos/postgresql.svg" alt="postgresql Logo">
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">Knex.js</div> 
+                                                            <img class="knexLogo tech-logos-2" src="./assets/technology-logos/knex.svg" alt="knex Logo">
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <h3 class="project-title-hide" id="project-title-hide-2">National Park List<span class="btn-show">(show more)</span></h3>
+                <h3 class="project-title-show" id="project-title-show-2">National Park List<span class="btn-show">(show less)</span></h3>
+                <div class="projectTwoWrapper" id="project-two-wrapper">
+                    <h3 class="project-title-show">National Park List<span class="btn-show">(show more)</span></h3>
+                    <div class="projectTwo" id="project-two">
+                        <h3 class="project-title" hidden>National Park List</h3>
+                        <div class="project-body">
+                            <div class="screenshot-wrapper">
+                                <div class="featured-img-container-2" id="featured-img-container-2">
+                                    <!-- <span class="close-btn" id="close-btn">&times;</span> -->
+                                    <img class="featured-img-2 featured" id="featured-img-2" src="./assets/app-screenshots/nationalparklist-screenshot-3.png">
+                                </div>
+                                <div class="screenshot-container">
+                                    <div class="screenshot-column"><img id="screenshotOne-2" class="project-screenshot" src="./assets/app-screenshots/nationalparklist-screenshot-1.png" alt="National Park List Screenshot"></div>
+                                    <div class="screenshot-column"><img id="screenshotTwo-2" class="project-screenshot" src="./assets/app-screenshots/nationalparklist-screenshot-2.png" alt="National Park List Screenshot"></div>
+                                    <div class="screenshot-column"><img id="screenshotThree-2" class="project-screenshot" src="./assets/app-screenshots/nationalparklist-screenshot-3.png" alt="National Park List Screenshot"></div>
+                                    <div class="screenshot-column"><img id="screenshotFour-2" class="project-screenshot" src="./assets/app-screenshots/nationalparklist-screenshot-4.png" alt="National Park List Screenshot"></div>
+                                </div>
+                            </div>
+                            <div class="project-details">
+                                <p class="project-blurb">This app provides a clear and concise search of the U.S. National Park Service database.  Users can search for parks as well as create a runnning list of parks they want to visit.  Sometimes there is a National Park nearby that you never knew about. National Park List uses the National Park Service API and the Open Weather API to provide you with up to date information about all U.S. National parks, current weather, activities, map coordinates, contact information and all other pertinent information you may be looking for. If you want to find a new and exciting National Park - National Park List is your plan.</p>
+                                <div class="containerContainer">
+                                    <div class="projButtonContainer">
+                                        <a href="https://cryptotracker-omega.vercel.app/" target="_blank" class="projectButton">Live Demo</a>
+                                        <a href="https://github.com/nelsandersoncreative/nationalparklist-client" target="_blank" class="projectButton">Client GitHub Repo</a>
+                                        <a href="https://github.com/nelsandersoncreative/nationalparklist-server" target="_blank" class="projectButton">Server GitHub Repo</a>
+                                    </div>
+                                    <div class="technology-container-wrapper">
+                                        <h4 class="technologyTechHeading">TECHNOLOGY</h4>
+                                        <div class="technologyContainerTwo">
+                                            <button class="btn-reveal" id="btn-reveal-2">TECHNOLOGY <span class="btn-show">(show more)</span></button>
+                                            <button class="btn-hide" id="btn-hide-2">TECHNOLOGY <span class="btn-show">(show less)</span></button>
+                                            <div class="front-end-tech-mobile" id="front-end-tech-mobile-2">
+                                                <div class="technology-item-3">
+                                                    <div class="tech-text">PostgreSQL</div>
+                                                    <img class="postgresqlLogo-mobile tech-logos" src="./assets/technology-logos/postgresql.svg" alt="postgresql Logo">
+                                                </div>
+                                                <div class="technology-item-3">
+                                                    <div class="tech-text">Express</div>
+                                                    <img class="express-logo-mobile tech-logos" src="./assets/technology-logos/express.svg" alt="express Logo">
+                                                </div>
+                                                <div class="technology-item-3">
+                                                    <div class="tech-text">React</div>
+                                                    <img class="reactLogo-mobile tech-logos" src="./assets/technology-logos/react.svg" alt="react Logo">
+                                                </div>
+                                                <div class="technology-item-3">
+                                                    <div class="tech-text">Node.js</div>
+                                                    <img class="nodeLogo-mobile tech-logos" src="./assets/technology-logos/node-js.svg" alt="node Logo">
+                                                </div>
+                                            </div>
+                                            <div class="technology-grid" id="technology-grid-2">
+                                                <div class="left-list">
+                                                    <h5 className="first-h5">Front End</h5>
+                                                    <div class="front-end-tech-4">
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">React</div>
+                                                            <img class="reactLogo tech-logos" src="./assets/technology-logos/react.svg" alt="react Logo">
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">Javascript</div>
+                                                            <div><img class="javascriptLogo tech-logos" src="./assets/technology-logos/JavaScript.svg" alt="JavaScript Logo"></div>
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">HTML5</div>
+                                                            <div><img class="htmlLogo tech-logos" src="./assets/technology-logos/HTML5.svg" alt="HTML5 Logo"></div>
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">CSS</div>
+                                                            <img class="cssLogo tech-logos" src="./assets/technology-logos/CSS.svg" alt="CSS Logo">
+                                                        </div>
+                                                    </div>
+                                                    <h5>Testing</h5>
+                                                    <div class="front-end-tech-3">
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">Jest</div>
+                                                            <img class="jestLogo tech-logos" src="./assets/technology-logos/jest.svg" alt="jest Logo">
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">Supertest</div>
+                                                            <img class="supertestLogo tech-logos" src="./assets/technology-logos/supertest.svg" alt="supertest Logo">
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">Mocha</div>
+                                                            <img class="mochaLogo tech-logos-3" src="./assets/technology-logos/mocha.svg" alt="mocha Logo">
+                                                        </div>
+                                                    </div>
+                                                    <h5>Production</h5>
+                                                    <div class="front-end-tech-2">
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text" hidden>Vercel</div>
+                                                            <img class="vercelLogo tech-logos-3" src="./assets/technology-logos/vercel.svg" alt="vercel Logo">
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text" hidden>Heroku</div>
+                                                            <img class="herokuLogo tech-logos-3" src="./assets/technology-logos/heroku.svg" alt="heroku Logo">
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <h5>Back End</h5>
+                                                    <div class="front-end-tech-2">
+                                                        <div class="technology-item-3">
+                                                            <di class="tech-text" hidden>Node.js</di>
+                                                            <img class="nodeLogo tech-logos-3" src="./assets/technology-logos/node-js.svg" alt="node Logo">
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text" hidden>Express</div>
+                                                            <img class="expressLogo tech-logos-3" src="./assets/technology-logos/express.svg" alt="express Logo">
+                                                        </div>
+                                                    </div>
+                                                    <h5>Authentication</h5>
+                                                    <div class="front-end-tech">
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">JWT</div>
+                                                            <img class="jwtLogo tech-logos" src="./assets/technology-logos/JWT.svg" alt="JWT Logo">
+                                                        </div>
+                                                    </div>
+                                                    <h5>Database</h5>
+                                                    <div class="front-end-tech-2">
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text" hidden>PostgreSQL</div>
+                                                            <img class="postgresqlLogo tech-logos-2" src="./assets/technology-logos/postgresql.svg" alt="postgresql Logo">
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">Knex.js</div> 
+                                                            <img class="knexLogo tech-logos-2" src="./assets/technology-logos/knex.svg" alt="knex Logo">
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <h3 class="project-title-hide" id="project-title-hide-3">Pop Chord Progressions<span class="btn-show">(show more)</span></h3>
+                <h3 class="project-title-show" id="project-title-show-3">Pop Chord Progressions<span class="btn-show">(show less)</span></h3>
+                <div class="projectThreeWrapper" id="project-three-wrapper">
+                    <h3 class="project-title-show">Pop Chord Progressions<span class="btn-show">(show more)</span></h3>
+                    <div class="projectThree" id="project-three">
+                        <h3 class="project-title" hidden>Pop Chord Progressions</h3>
+                        <div class="project-body">
+                            <div class="screenshot-wrapper">
+                                <div class="featured-img-container-3" id="featured-img-container-3">
+                                    <!-- <span class="close-btn" id="close-btn">&times;</span> -->
+                                    <img class="featured-img-3 featured" id="featured-img-3" src="./assets/app-screenshots/popchordprogressions-screenshot-1.png">
+                                </div>
+                                <div class="screenshot-container">
+                                    <div class="screenshot-column"><img id="screenshotOne-3" class="project-screenshot" src="./assets/app-screenshots/popchordprogressions-screenshot-1.png" alt="Pop Song Chord Progressions Screenshot"></div>
+                                    <div class="screenshot-column"><img id="screenshotTwo-3" class="project-screenshot" src="./assets/app-screenshots/popchordprogressions-screenshot-2.png" alt="Pop Song Chord Progressions Screenshot"></div>
+                                    <div class="screenshot-column"><img id="screenshotThree-3" class="project-screenshot" src="./assets/app-screenshots/popchordprogressions-screenshot-3.png" alt="Pop Song Chord Progressions Screenshot"></div>
+                                    <div class="screenshot-column"><img id="screenshotFour-3" class="project-screenshot" src="./assets/app-screenshots/popchordprogressions-screenshot-1.png" alt="Pop Song Chord Progressions Screenshot"></div>
+                                </div>
+                            </div>
+                            <div class="project-details">
+                                <p class="project-blurb3">This app is designed to teach users of all backgrounds and skill levels to understand basic concepts relating to chord progressions in popular music. Furthermore, the user will be able to create their own chord progressions. Based on what chord progression(s) they create, the app will provide:
+                                    <ul class="blurb3-list">
+                                        <li>a playable recording of the user's chord progression</li>
+                                        <li>the user's chord progression in standard music notation</li>
+                                        <li>chord diagrams illustrating how to play the user's chord progression(s) on the piano</li>
+                                        <li>As well as what songs use the chord progression(s) the user chose</li>
+                                    </ul>
+                                <div class="containerContainer">
+                                    <div class="projButtonContainer">
+                                        <a href="https://nelsandersoncreative.github.io/apiHackCapstone/" target="_blank" class="projectButton">Live Demo</a>
+                                        <a href="https://github.com/nelsandersoncreative/apiHackCapstone" target="_blank" class="projectButton">GitHub Repo</a>
+                                    </div>
+                                    <div class="technology-container-wrapper">
+                                        <h4 class="technologyTechHeading-show">TECHNOLOGY</h4>
+                                        <div class="technologyContainerThree">
+                                            <div class="technology-grid-show" id="technology-grid-3">
+                                                <div class="left-list">
+                                                    <h5 className="first-h5">Front End</h5>
+                                                    <div class="front-end-tech-4">
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">Javascript</div>
+                                                            <div><img class="javascriptLogo tech-logos" src="./assets/technology-logos/JavaScript.svg" alt="JavaScript Logo"></div>
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">HTML5</div>
+                                                            <div><img class="htmlLogo tech-logos" src="./assets/technology-logos/HTML5.svg" alt="HTML5 Logo"></div>
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">CSS</div>
+                                                            <img class="cssLogo tech-logos" src="./assets/technology-logos/CSS.svg" alt="CSS Logo">
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">jQuery</div>
+                                                            <img class="jqueryLogo tech-logos" src="./assets/technology-logos/jquery.svg" alt="jquery Logo">
+                                                        </div>
+                                                    </div>
+                                                    <h5 className="first-h5">Third-Party APIs</h5>
+                                                    <div class="front-end-tech-2">
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">Vex-Flow</div>
+                                                            <div><img class="vexflowLogo tech-logos-png" src="./assets/technology-logos/vexflow.png" alt="vexflow Logo"></div>
+                                                        </div>
+                                                        <div class="technology-item-3">
+                                                            <div class="tech-text">HookTheory</div>
+                                                            <div><img class="hookTheoryLogo tech-logos-png" src="./assets/technology-logos/hooktheory.png" alt="HookTheory Logo"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div> 
+                </div>    
+            </div>               
+        </section>
+        <span class="anchor" id="section3"></span>
+        <section class="contact" id="contactSection">
+            <h2>CONTACT</h2>
+            <div class="contactList">
+                <div class="contactLinkMail contactLink">
+                    <a href="mailto:nelsandersoncreative@gmail.com"><img class="socialIcon mailIcon" src="./assets/Mail.png" alt="Email Icon"><p class="socialText mailText">Email</p></a>
+                </div>
+                <div class="contactLinkLinkedIn contactLink">
+                    <a href="https://www.linkedin.com/in/nelsandersoncreative/" target="_blank"><img class="socialIcon linkedInIcon" src="./assets/linkedin.png" alt="LinkedIn Icon"><p class="socialText linkedInText">LinkedIn</p></a>
+                </div>
+                <div class="contactLinkGitHub contactLink">
+                    <a href="https://github.com/nelsandersoncreative" target="_blank"><img class="socialIcon gitHubIcon" src="./assets/GitHub.png" alt="GitHub Icon"><p class="socialText gitHubText">GitHub</p></a>
+                </div>
+            </div>
+            
+        </section>    
+        
+    </section>
+    <section class="backToTop">
+        <a href="#section0" class="nav-link topArrow" id="ToTopNav"><img class="arrowTop" src="assets/topArrow.png" alt="Top Arrow Pic"/></a>
+    </section>
+    </main>
+<footer>
+    <p class="footerText">©2020 Nels Anderson Creative</p>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
+
+<!--
+    HOME LINKS
+    <div class="homeLinks">
+                    <a href="mailto: nelsandersoncreative@gmail.com"><button type="button" class="buttonDark">EMAIL ME</button></a>
+                    <button id="projectsButton" type="button" class="buttonLight">VIEW PROJECTS</button>
+                </div>
+-->

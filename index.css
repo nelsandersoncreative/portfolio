@@ -1,0 +1,776 @@
+
+/*
+GLOBAL I elements
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin-top: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: questrial;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.anchor {
+    display: block;
+    height: 130px;
+    margin-top: -130px;
+    visibility: hidden;
+}
+
+Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 100%;
+    background: white;
+  }
+
+/*
+LEVEL I elements
+*/
+
+
+.projects {
+    width: 100%;
+    padding-top: 20px;
+    border-bottom: 1.2px solid #E8E8E8;
+    padding-bottom: 20px;
+}
+
+/* BANNER CONTENTS */
+
+h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.bannerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.navBar {
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #000000; text-decoration: none;
+}
+
+.nav-link:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #F0F0F0;
+}
+
+.nav-link-open:hover {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.portraitPic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portrait {
+    width: 100%;
+    padding-top: 10px;
+    height: auto;
+}
+
+
+/* ABOUT PAGE CONTENTS */ 
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 275px;
+}
+
+.contentText {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 1.2px solid #E8E8E8;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 20px;
+    text-transform: uppercase; 
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F0F0F0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.welcomeBioTextOne, .welcomeBioTextTwo {
+    font-size: 12px;
+    padding-bottom: 25px;
+    line-height: 21px;
+}
+
+.welcomeBioTextOne {
+    padding-bottom: 20px;
+}
+
+.topArrow {
+    height: 15%;
+    width: 15%;
+}
+
+/* PROJECTS PAGE CONTENTS */ 
+
+.projects {
+    width: 342px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.projectOneWrapper, .projectTwoWrapper, .projectThreeWrapper {
+    display: none;
+    border-left: 2px solid #F0F0F0;
+    border-right: 2px solid #F0F0F0;
+    border-bottom: 2px solid #F0F0F0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.projectOne, .projectTwo, .projectThree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: 100%;
+    border-top: 2px solid #F0F0F0;
+}
+
+.project-title {
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.project-title-hide, .project-title-hide-2, .project-title-hide-3 {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 2px solid black;
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+}
+
+.project-title-show, .project-title-show-2, .project-title-show-3 {
+    display: none;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 2px solid black;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+.project-title-show:hover, .project-title-show-2:hover, .project-title-show-3:hover, .project-title-hide:hover, .project-title-hide-2:hover, .project-title-hide-3:hover {
+    color: white;
+    background-color: black;
+    font-size: 14px;
+}
+
+.project-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projTwoShotCont, .projThreeShotCont {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.featured-img, .featured-img-2, .featured-img-3 {
+    Height: 284px;
+    width: 284px;
+}
+
+.project-screenshot {
+    height: 100%;
+    width: 60px;
+    margin: 0px;
+    padding: 2px;
+    border: 3px solid #F0F0F0;
+}
+
+.project-details {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.project-blurb, .project-blurb3 {
+    line-height: 21px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.blurb3-list {
+    margin-left: 12px;
+    list-style-type: circle;
+    line-height: 21px;
+    font-size: 10px;
+}
+
+.screenshot-spacer {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #F0F0F0;
+    margin-bottom: 50px;
+}
+
+.screenshot-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.screenshot-column {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 10px;
+}
+
+.screenshot-column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+
+.screenshot-column img:hover {
+    opacity: 1;
+}
+
+.screenshot-container {
+    margin-bottom: 20px;
+}
+
+.screenshot-container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.featured {
+    padding: 15px;
+    border: 2px solid #F0F0F0;
+}
+
+.featured-img-container, .featured-img-container-2 {
+    position: relative;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+.technology-container-wrapper {
+    padding-top: 30px;
+}
+
+.technologyTechHeading {
+    display: none;
+    /* flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: .3rem;
+}
+
+.technologyTechHeading-show {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: .3rem;
+}
+
+
+
+.technologyContainerTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technologyContainerThree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technology-grid {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.technology-grid-show {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.left-list {
+    width: 100%;
+}
+
+.front-end-tech {
+    height: auto;
+    width: 100%;
+}
+
+.front-end-tech-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.front-end-tech-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.front-end-tech-4 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+
+.technology-item-3 {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technology-grid > .left-list > h5 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.technology-grid > .left-list > h5:first-child {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+    text-transform: uppercase; 
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F0F0F0;
+}
+
+.technology-grid-show > .left-list > h5 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.technology-grid-show > .left-list > h5:first-child {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+    text-transform: uppercase; 
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F0F0F0;
+}
+
+.tech-text {
+    margin: 15px 0px 10px 0px;
+    text-align: center;
+}
+
+.tech-logos {
+    height: 3em;
+    width: 3em;
+}
+
+.tech-logos-2 {
+    height: 4em;
+    width: 4em;
+}
+
+.tech-logos-3 {
+    height: 5em;
+    width: 5em;
+}
+
+.tech-logos-png {
+    width: auto;
+    height: 80px;
+}
+
+.cssLogo {
+    height: 48px;
+    width: auto;
+    margin-bottom: 3px;
+}
+
+.mochaLogo {
+    height: 48px;
+}
+
+.vercelLogo {
+    margin-top: 10px;
+}
+
+.herokuLogo {
+    width: 120px;
+}
+
+.nodeLogo, .expressLogo {
+    width: 100px;
+    margin-top: 15px;
+}
+
+.postgresqlLogo {
+    margin-top: 15px;
+    height: auto;
+    width: 100px;
+}
+
+.projButtonContainer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.projectButton {
+    color: white;
+    text-decoration: none;
+    background: black;
+    border: 2px solid black;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: .3rem;
+    margin: 10px;
+}
+
+.projectButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-reveal, .btn-hide {
+    font-family: Questrial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: .3rem;
+}
+
+.btn-hide {
+    display: none;
+}
+
+.btn-reveal:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-hide:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.front-end-tech-mobile {
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+
+.reactLogo-mobile, .nodeLogo-mobile {
+    width: 45px;
+    margin: 10px 12px 12px 12px;
+}
+
+.express-logo-mobile {
+    width: 40px;
+    margin: 10px 12px 12px 12px;
+}
+
+.postgresqlLogo-mobile {
+    width: 50px;
+    margin: 10px 12px 12px 12px;
+}
+
+.hookTheoryLogo {
+    height: 70px;
+    width: auto;
+    padding: 10px;
+    border: 2px solid #F0F0F0;
+}
+
+.vexflowLogo {
+    height: 70px;
+    width: auto;
+}
+
+/* CONTACT PAGE CONTENTS */ 
+
+
+.contact {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+            
+.contactLink > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #000000; text-decoration: none;
+}
+
+.socialIcon {
+    height: 15%;
+    width: 15%;
+    margin-right: 20px;
+}
+
+.linkedInIcon {
+    margin-left: 16px;
+}
+                    
+.gitHubIcon {
+    margin-left: 7px;
+}
+                    
+.socialText {
+    font-size: 17px;
+}
+
+.contactButton {
+    padding-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topLink {
+    color: #000000; text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.arrowTop {
+    display: block;
+    padding-top: 20px;
+    height: 100px;
+}
+
+@media only screen and (min-width: 765px) {
+    .content {
+        width: 600px;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    .project-details {
+        width: 100%;
+    }
+
+    .projButtonContainer {
+        flex-direction: row;
+    }
+
+    .projectButton {
+        font-size: 14px;
+    }
+
+    .blurb3-list {
+        font-size: 12px;
+    }
+
+    .front-end-tech-mobile {
+        margin: 10px 0px;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        column-gap: 30px;
+    }
+
+    .postgresqlLogo-mobile, .express-logo-mobile, .reactLogo-mobile, .nodeLogo-mobile {
+        height: 60px;
+    }
+
+    .contactList {
+        flex-direction: row;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1168px) {
+    .content {
+        width: 700px;
+    }
+
+    .project-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .projButtonContainer {
+        flex-direction: column;
+    }
+
+    .contactLink > a:hover {
+        padding-bottom: 10px;
+        border-bottom: 2px solid #F0F0F0;
+    }
+
+
+}
