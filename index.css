@@ -225,7 +225,7 @@ h5 {
     text-transform: uppercase;
     border: 2px solid black;
     margin: 0px 0px 10px 0px;
-    width: 100%;
+    width: 90%;
 }
 
 .project-title-show, .project-title-show-2, .project-title-show-3 {
@@ -238,7 +238,7 @@ h5 {
     text-transform: uppercase;
     border: 2px solid black;
     margin: 0px 0px 0px 0px;
-    width: 100%;
+    width: 90%;
 }
 
 .project-title-show:hover, .project-title-show-2:hover, .project-title-show-3:hover, .project-title-hide:hover, .project-title-hide-2:hover, .project-title-hide-3:hover {
