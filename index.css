@@ -225,7 +225,7 @@ h5 {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 10px 10px 10px;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
     border: 2px solid black;
     margin: 0px 0px 10px 0px;
@@ -238,7 +238,7 @@ h5 {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 10px 10px 10px;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
     border: 2px solid black;
     margin: 0px 0px 0px 0px;
@@ -248,7 +248,7 @@ h5 {
 .project-title-show:hover, .project-title-show-2:hover, .project-title-show-3:hover, .project-title-hide:hover, .project-title-hide-2:hover, .project-title-hide-3:hover {
     color: white;
     background-color: black;
-    font-size: 14px;
+    font-size: 11px;
 }
 
 .project-body {
@@ -718,6 +718,14 @@ footer {
 
     .projects {
         width: 100%;
+    }
+
+    .project-title-hide, .project-title-hide-2, .project-title-hide-3, .project-title-show, .project-title-show-2, .project-title-show-3 {
+        font-size: 15px;
+    }
+
+    .project-title-show:hover, .project-title-show-2:hover, .project-title-show-3:hover, .project-title-hide:hover, .project-title-hide-2:hover, .project-title-hide-3:hover {
+        font-size: 14px;
     }
 
     .project-details {
