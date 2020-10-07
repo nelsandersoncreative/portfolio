@@ -753,7 +753,11 @@ footer {
 
 @media only screen and (min-width: 1168px) {
     .content {
-        width: 700px;
+        width: 800px;
+    }
+
+    .welcomeBioTextOne, .welcomeBioTextTwo {
+        font-size: 16px;
     }
 
     .project-body {
@@ -765,6 +769,10 @@ footer {
 
     .projButtonContainer {
         flex-direction: column;
+    }
+
+    .project-blurb, .project-blurb3 {
+        font-size: 16px;
     }
 
     .contactLink > a:hover {
