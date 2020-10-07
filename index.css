@@ -771,7 +771,7 @@ footer {
         flex-direction: column;
     }
 
-    .project-blurb, .project-blurb3 {
+    .project-blurb, .project-blurb3, .blurb3-list {
         font-size: 16px;
     }
 
