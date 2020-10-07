@@ -782,7 +782,7 @@ footer {
     }
 
     .projButtonContainer {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .project-blurb, .project-blurb3, .blurb3-list {
